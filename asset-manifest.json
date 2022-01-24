@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/enactus/static/css/main.d57c4685.css",
+    "main.js": "/enactus/static/js/main.cf6fc986.js",
+    "static/media/export svg.svg": "/enactus/static/media/export svg.e07fee2ccea1a30ead06c18b0b80320d.svg",
+    "static/media/unnati_web.svg": "/enactus/static/media/unnati_web.dc3c3cd929debd61c74ea2bd474df94d.svg",
+    "static/media/milan_site1.png": "/enactus/static/media/milan_site1.d7037cefd365b47b5a0b.png",
+    "static/media/big_logo.svg": "/enactus/static/media/big_logo.f4e2d87eb0a495bec7d99f42ab384707.svg",
+    "static/media/Ellipse.png": "/enactus/static/media/Ellipse.32e1530be89ced433fed.png",
+    "static/media/Group 54.png": "/enactus/static/media/Group 54.d0631b90c66fa0b2b415.png",
+    "static/media/Rectangle 64.png": "/enactus/static/media/Rectangle 64.6fda6c20e14577b76b36.png",
+    "static/media/img_1.png": "/enactus/static/media/img_1.bd708bfbf96b251aaf9b.png",
+    "static/media/image 6.svg": "/enactus/static/media/image 6.cd8a5cf1267dd602f7966009a4525386.svg",
+    "static/media/img_4.png": "/enactus/static/media/img_4.cf252e83c719c7c09d1b.png",
+    "static/media/enactusLogo.png": "/enactus/static/media/enactusLogo.285ae297a1e023717471.png",
+    "static/media/img_2.png": "/enactus/static/media/img_2.d25f823fdb7935f2122c.png",
+    "static/media/image 8.svg": "/enactus/static/media/image 8.421e4bc7da4ab41d5aac2ce52dd15220.svg",
+    "static/media/image 7.svg": "/enactus/static/media/image 7.91b77e4e6f4fbf8982ec575d5d011e16.svg",
+    "index.html": "/enactus/index.html",
+    "static/media/unnati_bg.svg": "/enactus/static/media/unnati_bg.a574dc62e4fa725879af19be5c72a87a.svg",
+    "static/media/Vector.svg": "/enactus/static/media/Vector.8191f2155ad8db0291005b9304dd97dc.svg",
+    "static/media/Vector (1).svg": "/enactus/static/media/Vector (1).5c1ea35b555605b340c349920a321487.svg",
+    "static/media/skew2.svg": "/enactus/static/media/skew2.c61b00933160d2bd70d04904fdd8353e.svg",
+    "main.d57c4685.css.map": "/enactus/static/css/main.d57c4685.css.map",
+    "main.cf6fc986.js.map": "/enactus/static/js/main.cf6fc986.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d57c4685.css",
+    "static/js/main.cf6fc986.js"
+  ]
+}
