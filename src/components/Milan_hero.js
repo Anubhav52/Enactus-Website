@@ -29,7 +29,7 @@ export default Milan_hero;
 
 export const Milan_container = styled.div`
   height: 100vh;
-  background: #1a1c1e;
+  background: #151515;
   color: #fff;
 `;
 
@@ -47,23 +47,22 @@ export const Milan_content = styled.div`
   background-image: url(${bg_img});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 650px;
+  background-size: 500px;
   position: relative;
 
   img {
     position: absolute;
     width: 350px;
     margin-top: 40px;
-    /* margin-right: auto;
-    margin-left: auto; */
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-60%, -50%);
+    border-radius: 20px;
+    transform: translate(-50%, -40%);
     object-fit: contain;
   }
 
   h1 {
-    color: #dbc36d;
+    color: #40d32e;
     font-size: 75px;
     font-weight: 600;
     position: absolute;
@@ -74,7 +73,7 @@ export const Milan_content = styled.div`
 
   p {
     position: absolute;
-    top: 60%;
+    top: 50%;
     right: 80px;
     width: 35%;
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Cards/Card';
-// import { data } from './data';
+import { data } from '../data';
 import './About.css';
 function About() {
   return (
@@ -12,7 +12,7 @@ function About() {
           </span>
 
           <div className='row'>
-            {/* {data.map((people) => {
+            {data.map((people) => {
               const { id, name, title, img, line, insta, linkedin } = people;
               return (
                 <Card
@@ -24,7 +24,7 @@ function About() {
                   insta={insta}
                 />
               );
-            })} */}
+            })}
           </div>
         </div>
       </section>

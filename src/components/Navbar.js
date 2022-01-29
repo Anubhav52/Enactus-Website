@@ -27,10 +27,10 @@ function Navbar() {
         <span className='navbar-toggler-icon'></span>
       </button>
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-        <ul className='nav mr-auto mx-auto'>
+        <ul className='nav mr-auto mx-auto '>
           <li className='nav-item dropdown'>
             <a
-              className='nav-link dropdown-toggle'
+              className='nav-link dropdown-toggle text-dark'
               href='#'
               id='navbarDropdown'
               role='button'
@@ -41,17 +41,17 @@ function Navbar() {
               Enactus Worldwide
             </a>
             <div className='dropdown-menu' aria-labelledby='navbarDropdown'>
-              <a className='dropdown-item' href='#'>
+              <a className='dropdown-item text-dark' href='#'>
                 Inititatives
               </a>
-              <a className='dropdown-item' href='#'>
+              <a className='dropdown-item text-dark' href='#'>
                 Plans
               </a>
             </div>
           </li>
           <li className='nav-item dropdown'>
             <a
-              className='nav-link dropdown-toggle'
+              className='nav-link dropdown-toggle text-dark '
               href='#'
               id='navbarDropdown'
               role='button'
@@ -69,7 +69,7 @@ function Navbar() {
                 Project Milan
               </a>
 
-              <a className='dropdown-item' href='#'>
+              <a className='dropdown-item text-dark' href='#'>
                 Project Swajal
               </a>
               <a className='dropdown-item' href='#'>
@@ -77,9 +77,9 @@ function Navbar() {
               </a>
             </div>
           </li>
-          <li className='nav-item'>
+          <li className='nav-item text-dark'>
             <a
-              className='nav-link '
+              className='nav-link text-dark '
               href='#'
               id='navbarDropdown'
               role='button'
@@ -96,13 +96,13 @@ function Navbar() {
             {' '}
             <i
               class='fab fa-linkedin'
-              style={{ fontSize: '2rem', color: 'white' }}
+              style={{ fontSize: '2rem', color: 'black' }}
             ></i>
           </a>
-          <a href='/'>
+          <a href='https://www.instagram.com/enactusdtu/?hl=en'>
             <i
               class='fab fa-instagram'
-              style={{ fontSize: '2rem', marginLeft: '5px', color: 'white' }}
+              style={{ fontSize: '2rem', marginLeft: '5px', color: 'black' }}
             ></i>
           </a>
         </div>

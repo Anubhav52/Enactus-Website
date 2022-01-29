@@ -3,8 +3,12 @@ import styled from 'styled-components';
 import Navbar from './Navbar';
 import bg_Img from '../images/unnati_web.svg';
 import Status from './Status';
+import { unnati_data, impact_unnati } from '../data_unnati';
+import { Stats } from './Swajal_main';
 
 const Unnati_hero = () => {
+  const { about } = unnati_data;
+
   return (
     <Unnati_main>
       <Unnati_container>
@@ -15,24 +19,27 @@ const Unnati_hero = () => {
             <h1>
               Project<br></br>Unnati
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestiae, asperiores officiis nulla ipsa ipsum ullam,
-              reprehenderit, hic amet eum perspiciatis eius provident laboriosam
-              pariatur ea adipisci tempora illum facere tenetur minima vero
-              voluptates? Recusandae placeat molestiae labore unde beatae ullam
-              fugiat velit. Tempore dolores quisquam autem illum sapiente,
-              accusantium nisi dolorem ab fugit. Temporibus voluptatibus nihil
-              ea soluta ab at consequuntur. Animi unde praesentium obcaecati
-              laborum porro quos consectetur magnam.
-            </p>
+            <p>{about}</p>
           </Unnati_content>
           <Unnati_demo>
             <img src={bg_Img} alt='' />
           </Unnati_demo>
         </Unnati_div>
       </Unnati_container>
-      <Status pd={'40px'} />
+      <Stats>
+        {impact_unnati.map((ele) => {
+          const { id, fig, description } = ele;
+          return (
+            <Status
+              pd={'150px'}
+              black='#000'
+              id={id}
+              fig={fig}
+              description={description}
+            />
+          );
+        })}
+      </Stats>
     </Unnati_main>
   );
 };
@@ -45,10 +52,9 @@ export const Unnati_main = styled.div`
 `;
 
 export const Unnati_container = styled.div`
-  height: 100vh;
+  height: 100%;
   background-color: #fff;
   color: #000;
-  margin-bottom: 230px;
 `;
 
 export const Showcase = styled.div`
@@ -86,6 +92,7 @@ export const Unnati_content = styled.div`
     padding-top: 80px;
     width: 50%;
     margin-left: 90px;
+    font-size: 20px;
   }
 `;
 export const Unnati_demo = styled.div`

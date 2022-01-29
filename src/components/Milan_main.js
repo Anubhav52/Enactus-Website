@@ -7,7 +7,11 @@ const Milan_main = () => {
   return (
     <Container>
       <Content>
-        <h1>Project Milan</h1>
+        <h1>
+          Project
+          <br></br>
+          <span>Milan</span>
+        </h1>
         <Row>
           <Col1>
             <p>
@@ -33,7 +37,7 @@ export default Milan_main;
 
 export const Container = styled.div`
   height: 100%;
-  background: #1a1c1e;
+  background: #151515;
   color: #fff;
   padding-top: 50px;
 `;
@@ -50,6 +54,11 @@ export const Content = styled.div`
     font-size: 50px;
     line-height: 1.2;
   }
+
+  span {
+    font-size: 85px;
+    color: #40d32e;
+  }
 `;
 export const Row = styled.div`
   display: flex;
@@ -58,7 +67,7 @@ export const Col1 = styled.div`
   p {
     width: 57%;
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 80px;
   }
 `;
 export const Col2 = styled.div`

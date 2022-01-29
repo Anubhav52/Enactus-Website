@@ -4,8 +4,11 @@ import svg_1 from '../images/image 6.svg';
 import svg_2 from '../images/image 7.svg';
 import svg_3 from '../images/image 8.svg';
 import Navbar from '../components/Navbar';
+import { swajal_data } from '../data_swajal';
 
 const Swajal_hero = () => {
+  const { about } = swajal_data;
+
   return (
     <Swajal_container>
       <Navbar />
@@ -14,10 +17,7 @@ const Swajal_hero = () => {
           <h1>
             PROJECT <span>SWAJAL</span>
           </h1>
-          <p>
-            LOEM EPS OR SIT AMET LORE UM DOLOR SIT AMET LOREM EPSUM DOLOR SIT
-            AMET LOREM EPSUM DOL OR SI SIT AMET LO T AMET
-          </p>
+          <p>{about}</p>
         </Swajal_content>
 
         <Swajal_images>
@@ -94,7 +94,6 @@ export const Swajal_images = styled.div`
   position: relative;
 `;
 
-export const Swajal_waves = styled.div``;
 export const Image1 = styled.div`
   position: relative;
   img {
