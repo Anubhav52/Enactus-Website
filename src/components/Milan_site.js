@@ -14,13 +14,12 @@ const Milan_site = () => {
         <img src={require('../images/milan_site1.png')} alt='' />
         <Content>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            consectetur esse voluptatum quod, et, nostrum repellat
-            necessitatibus officiis voluptatem distinctio delectus deserunt.
-            Voluptatibus eaque dignissimos asperiores quidem. Enim velit
-            temporibus necessitatibus iure adipisci expedita libero distinctio
-            minus dolor nobis quod commodi neque reprehenderit odio nihil aut
-            saepe, consectetur, repellat cum.
+            Project Milan is a collaboration between Enactus DTU and Enactus
+            Southampton. The goal of the project is to use aquaponic technology
+            to increase agricultural efficiency while lowering water use.The
+            partnership helps in providing accreditation for a course on
+            aquaponics and the relevance of water sustainability for farmers and
+            schoolchildren, or assisting in the application for accreditation.
           </p>
         </Content>
       </Row2>

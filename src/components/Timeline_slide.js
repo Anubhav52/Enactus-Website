@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import useOnScreen from '../hooks/useOnScreen';
 import './Timeline.css';
 
-const Timeline_slide = ({ title, description, index, updateActiveImage }) => {
+const Timeline_Slide = ({ title, description, index, updateActiveImage }) => {
   const ref = useRef(null);
 
   const onScreen = useOnScreen(ref);
@@ -21,4 +21,4 @@ const Timeline_slide = ({ title, description, index, updateActiveImage }) => {
   );
 };
 
-export default Timeline_slide;
+export default Timeline_Slide;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Home.css';
-import big_logo from '../images/big_logo.svg';
+import big_logo from '../images/big_logopng.png';
 import { gsap } from 'gsap';
 
 const Home = () => {
@@ -67,24 +67,10 @@ const Home = () => {
         </header>
 
         <div className='social-header big_text'>
-          <ul>
-            <li>
-              <img src={require('../images/mail.png')} alt='email-id' />
-            </li>
-            <li>
-              <a href='/'>
-                <img
-                  src={require('../images/Instagram-logo.png')}
-                  alt='Instagram-logo'
-                />
-              </a>
-            </li>
-            <li>
-              <a href='/'>
-                <img src={require('../images/linkedin-logo.png')} alt='' />
-              </a>
-            </li>
-          </ul>
+          <img src={require('../images/enactusIndia.png')} alt='' />
+          <a href='/'>
+            <h5>Enactus India</h5>
+          </a>
         </div>
       </div>
 

@@ -11,7 +11,7 @@ const Swajal_hero = () => {
 
   return (
     <Swajal_container>
-      <Navbar />
+      <Navbar img={require('../images/blackenactusLogo.png')} />
       <Row1>
         <Swajal_content>
           <h1>

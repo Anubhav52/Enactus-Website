@@ -17,21 +17,25 @@ export const impact_unnati = [
     id: '1',
     fig: '7,30,000',
     description: 'pages saved ',
+    img: 'https://i.imgur.com/ntVQZ93.png',
   },
   {
     id: '2',
-    fig: '32 Tonnes ',
-    description: 'Carbon Footprint reduced',
+    fig: '32',
+    description: 'Tonnes Carbon Footprint reduced',
+    img: 'https://i.imgur.com/sc0XqVe.png',
   },
   {
     id: '3',
     fig: '10',
     description: ' Cafes and Entrepreneurs',
+    img: 'https://i.imgur.com/0UhDIxQ.png',
   },
 
   {
     id: '4',
-    fig: 'Rs. 18,000/-',
+    fig: 'Rs.18,000/-',
     description: 'income per month per entrepreneur',
+    img: 'https://i.imgur.com/bCWrbze.png',
   },
 ];

@@ -7,19 +7,28 @@ import { unnati_data, impact_unnati } from '../data_unnati';
 import { Stats } from './Swajal_main';
 
 const Unnati_hero = () => {
-  const { about } = unnati_data;
-
   return (
     <Unnati_main>
       <Unnati_container>
-        <Navbar />
+        <Navbar img={require('../images/blackenactusLogo.png')} light='light' />
         <Showcase />
         <Unnati_div>
           <Unnati_content>
             <h1>
               Project<br></br>Unnati
             </h1>
-            <p>{about}</p>
+            <p>
+              We believe in the dictum <span> ‘Knowledge is Power’ </span> and
+              aim to use this power to transform the lives of urban slum
+              dwellers. This is where
+              <span> PROJECT UNNATI </span> comes in. We work towards digital
+              literacy, employment opportunities, training and ensure that each
+              and every person is able to benefit the maximum out of the
+              services we offer. We set up multipurpose cafes in rural and
+              suburban areas. These Unnati cafes act as the nodal agencies which
+              implement our programs and courses, each independently maintained
+              by our entrepreneurs."
+            </p>
           </Unnati_content>
           <Unnati_demo>
             <img src={bg_Img} alt='' />
@@ -28,7 +37,7 @@ const Unnati_hero = () => {
       </Unnati_container>
       <Stats>
         {impact_unnati.map((ele) => {
-          const { id, fig, description } = ele;
+          const { id, fig, description, img } = ele;
           return (
             <Status
               pd={'150px'}
@@ -36,6 +45,7 @@ const Unnati_hero = () => {
               id={id}
               fig={fig}
               description={description}
+              img={img}
             />
           );
         })}
@@ -94,7 +104,14 @@ export const Unnati_content = styled.div`
     margin-left: 90px;
     font-size: 20px;
   }
+
+  span {
+    font-size: 25px;
+    color: #e2b43b;
+    font-weight: 550;
+  }
 `;
+
 export const Unnati_demo = styled.div`
   position: absolute;
   top: 80px;

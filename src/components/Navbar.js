@@ -1,7 +1,8 @@
 import React from 'react';
 import './Home.css';
-import img from '../images/enactusLogo.png';
-function Navbar() {
+// import img from '../images/enactusLogo.png';
+// import img from '../images/blackenactusLogo.png';
+function Navbar({ img, light }) {
   const style = {
     position: 'relative',
     zIndex: '2',
@@ -9,9 +10,9 @@ function Navbar() {
 
   return (
     <nav className='navbar navbar-expand-lg active col-md-12 p-2' style={style}>
-      <div style={{ marginLeft: '70px' }}>
+      <div style={{ marginLeft: '10px' }}>
         <a href='/' className='logo navbar-brand text-white offset-md-2 ml-3'>
-          <img src={img} style={{ width: '84px', height: '51px' }}></img>
+          <img src={img} style={{ width: '100px', height: '10vh' }}></img>
         </a>
       </div>
 
@@ -30,7 +31,9 @@ function Navbar() {
         <ul className='nav mr-auto mx-auto '>
           <li className='nav-item dropdown'>
             <a
-              className='nav-link dropdown-toggle text-dark'
+              className={`nav-link dropdown-toggle ${
+                light ? 'text-light' : 'text-dark'
+              }`}
               href='#'
               id='navbarDropdown'
               role='button'
@@ -51,7 +54,9 @@ function Navbar() {
           </li>
           <li className='nav-item dropdown'>
             <a
-              className='nav-link dropdown-toggle text-dark '
+              className={`nav-link dropdown-toggle ${
+                light ? 'text-light' : 'text-dark'
+              }`}
               href='#'
               id='navbarDropdown'
               role='button'
@@ -79,7 +84,9 @@ function Navbar() {
           </li>
           <li className='nav-item text-dark'>
             <a
-              className='nav-link text-dark '
+              className={`nav-link dropdown-toggle ${
+                light ? 'text-light' : 'text-dark'
+              }`}
               href='#'
               id='navbarDropdown'
               role='button'
@@ -91,21 +98,7 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <div className='p-2' style={{ background: 'transparent' }}>
-          <a href='/'>
-            {' '}
-            <i
-              class='fab fa-linkedin'
-              style={{ fontSize: '2rem', color: 'black' }}
-            ></i>
-          </a>
-          <a href='https://www.instagram.com/enactusdtu/?hl=en'>
-            <i
-              class='fab fa-instagram'
-              style={{ fontSize: '2rem', marginLeft: '5px', color: 'black' }}
-            ></i>
-          </a>
-        </div>
+        <div className='p-2' style={{ background: 'transparent' }}></div>
       </div>
     </nav>
   );

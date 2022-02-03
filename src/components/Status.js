@@ -1,29 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Status = ({ black, pd, fig, description }) => {
+const Status = ({ black, pd, fig, description, img }) => {
   return (
     <SubContent pd={pd} black={black}>
-      <Div style={{ marginTop: '-20px' }}>
-        <img src={require('../images/img_1.png')} alt='' />
+      <Div>
+        <img src={img} alt='' />
         <h1>{fig}</h1>
         <h2>{description}</h2>
       </Div>
-      {/* <Div>
-        <img src={require('../images/img_2.png')} alt='' />
-        <h1>2X</h1>
-        <h2>faster growth</h2>
-      </Div>
-      <Div>
-        <img src={require('../images/img_3.png')} alt='' />
-        <h1>2X</h1>
-        <h2>faster growth</h2>
-      </Div>
-      <Div>
-        <img src={require('../images/img_4.png')} alt='' />
-        <h1>2X</h1>
-        <h2>faster growth</h2>
-      </Div> */}
     </SubContent>
   );
 };
@@ -45,7 +30,12 @@ export const Div = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   height: 150px;
+
+  h2 {
+    font-size: 16px;
+  }
 
   img {
     width: 150px;

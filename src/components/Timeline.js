@@ -8,7 +8,7 @@ const Timeline = () => {
       <Timeline_row>
         <Timeline_Content>
           <Time_Row1>
-            <h1>lorem ipsum</h1>
+            <h1>BUSINESS MODEL</h1>
           </Time_Row1>
           <Time_Row2>
             <Time_div1>

@@ -1,9 +1,9 @@
 import React from 'react';
-import Useful from './Useful';
-import Logo from './Logo';
-import Download from './Download';
-import Social from './Social';
-import img1 from './images/social.png';
+// import Useful from './Useful';
+// import Logo from './Logo';
+// import Download from './Download';
+// import Social from './Social';
+import img1 from '../images/enactusLogo.png';
 // import Services from './Services';
 function Foot() {
   return (

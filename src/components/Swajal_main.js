@@ -18,13 +18,14 @@ const Swajal_main = () => {
         {/* <Status black='#000' /> */}
         <Stats>
           {impact.map((ele) => {
-            const { id, fig, description } = ele;
+            const { id, fig, description, img } = ele;
             return (
               <Status
                 black='#000'
                 id={id}
                 fig={fig}
                 description={description}
+                img={img}
               />
             );
           })}
@@ -54,7 +55,7 @@ export const Main_container = styled.div`
 export const Stats = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 10px;
   justify-content: center;
 `;
 

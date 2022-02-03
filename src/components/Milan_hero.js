@@ -6,19 +6,21 @@ import Navbar from './Navbar';
 const Milan_hero = () => {
   return (
     <Milan_container>
-      <Navbar />
+      <Navbar img={require('../images/enactusLogo.png')} light='light' />
       <Milan_content>
         <h1>
           Hello I'm <br></br>a Farmer
         </h1>
         <img src={require('../images/Group 54.png')} alt='' />
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
-          recusandae, quo eligendi rem aspernatur aut accusantium dignissimos.
-          Ullam ea harum adipisci fugit, quia aliquid distinctio amet, voluptate
-          natus eos voluptatum quas commodi ipsam nobis, obcaecati iste aut
-          eligendi dolor nemo ut. Minima libero, voluptate praesentium cumque
-          reprehenderit omnis debitis beatae.
+          With more than half of the country's population working in
+          agriculture, India is heavily reliant on Mother Nature for income and
+          jobs. Raw material, tool, and additive prices have soared, resulting
+          in larger investments, but deteriorating crop quality has resulted in
+          more losses. Chemical fertilisers have also burned a hole in the
+          farmer's pocket while crippling the soil. Currently, over 52% of
+          agricultural households are in debt and have difficulty earning enough
+          to fulfil their basic needs.
         </p>
       </Milan_content>
     </Milan_container>
@@ -57,7 +59,7 @@ export const Milan_content = styled.div`
     top: 40%;
     left: 50%;
     border-radius: 20px;
-    transform: translate(-50%, -40%);
+    transform: translate(-55%, -40%);
     object-fit: contain;
   }
 
@@ -73,7 +75,7 @@ export const Milan_content = styled.div`
 
   p {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 80px;
     width: 35%;
   }

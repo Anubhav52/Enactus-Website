@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 import { timelineSlides } from '../data_timeline';
-import Timeline_slide from './Timeline_slide';
+import Timeline_Slide from './Timeline_Slide';
 import './Timeline.css';
 import { gsap } from 'gsap';
 import scrollTrigger from 'gsap/ScrollTrigger';
@@ -45,7 +45,7 @@ const Timeline_slides = () => {
     <div ref={timelineSliderRef} className='timeline-slides-container'>
       <div className='timeline-slides-left'>
         {timelineSlides.map((timeline, index) => (
-          <Timeline_slide
+          <Timeline_Slide
             key={timeline.imageUrl}
             title={timeline.title}
             description={timeline.description}

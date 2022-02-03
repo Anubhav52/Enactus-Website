@@ -8,7 +8,6 @@ export const Swajal = () => {
     <div>
       <Swajal_hero />
       <Swajal_main />
-      <Timeline />
     </div>
   );
 };
