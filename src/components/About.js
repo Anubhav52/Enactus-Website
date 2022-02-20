@@ -1,35 +1,35 @@
 import React from 'react';
-import Card from './Cards/Card';
-import { data } from '../data';
+import Navbar from '../components/Navbar';
 import './About.css';
-function About() {
-  return (
-    <div style={{ marginTop: '10rem', marginLeft: 'auto' }}>
-      <section id='about' className='about section-bg'>
-        <div className='container-fluid mt-5' data-aos='fade-up'>
-          <span className='council-heading' style={{ marginLeft: '35%' }}>
-            COUNCIL' 21
-          </span>
+import { data } from '../data';
+import Council_Card from './Council_Card';
 
-          <div className='row'>
-            {data.map((people) => {
-              const { id, name, title, img, line, insta, linkedin } = people;
-              return (
-                <Card
-                  name={name}
-                  title={title}
-                  img={img}
-                  line={line}
-                  linkedin={linkedin}
-                  insta={insta}
-                />
-              );
-            })}
-          </div>
+const About = () => {
+  return (
+    <div className='about-container'>
+      <Navbar img={require('../images/blackenactusLogo.png')} color='#d69f00' />
+      <div className='about-content'>
+        <div className='col1'>
+          <h1>Council 20'21</h1>
         </div>
-      </section>
+        <div className='col2'>
+          {data.map((people) => {
+            const { id, name, title, img, line, insta, linkedin } = people;
+            return (
+              <Council_Card
+                name={name}
+                title={title}
+                img={img}
+                line={line}
+                linkedin={linkedin}
+                insta={insta}
+              />
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default About;

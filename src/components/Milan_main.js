@@ -29,7 +29,7 @@ const Milan_main = () => {
             </p>
           </Col1>
           <Col2>
-            <img src={svg} alt='' />
+            <img src={require('../images/milan.png')} alt='' />
           </Col2>
         </Row>
       </Content>
@@ -57,12 +57,12 @@ export const Container = styled.div`
   height: 100%;
   background: #151515;
   color: #fff;
-  padding-top: 80px;
+  padding-top: 60px;
 `;
 
 export const Content = styled.div`
   background: #000;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 80px;
   height: 100%;
   border-radius: 0 200px 126px 0;
@@ -85,16 +85,17 @@ export const Row = styled.div`
 export const Col1 = styled.div`
   p {
     width: 57%;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 50px;
+    line-height: 1.5;
   }
 `;
 export const Col2 = styled.div`
   img {
-    width: 400px;
+    width: 500px;
     object-fit: contain;
     position: absolute;
     bottom: 1px;
-    right: 2px;
+    right: 6px;
   }
 `;

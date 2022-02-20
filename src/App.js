@@ -5,6 +5,7 @@ import { Swajal } from './screens/Swajal';
 import About from './components/About';
 import { Achievementss } from './components/Achievementss';
 import Unnati from './screens/Unnati';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/unnati' element={<Unnati />} />
         <Route path='/achievements' element={<Achievementss />} />
+        <Route path='/navbar' element={<Navbar />} />
       </Routes>
     </Router>
   );

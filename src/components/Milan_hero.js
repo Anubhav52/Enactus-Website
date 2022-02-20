@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import bg_img from '../images/unnati_bg.svg';
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 
 const Milan_hero = () => {
   return (
     <Milan_container>
-      <Navbar img={require('../images/enactusLogo.png')} light='light' />
+      <Navbar
+        img={require('../images/enactusLogo.png')}
+        color='#40d32e'
+        light='light'
+        logo={'https://i.imgur.com/lUHsc8Y.png'}
+      />
       <Milan_content>
         <h1>
           Hello I'm <br></br>a Farmer

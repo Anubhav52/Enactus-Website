@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import img from '../images/Ellipse.png';
 
 const CARD = styled.div`
   background-color: transparent;
@@ -17,31 +16,33 @@ const CARD = styled.div`
   cursor: pointer;
 `;
 const Image = styled.div`
-  width: 300px;
-  height: 300px;
-  background: url(${img});
+  width: 320px;
+  height: 320px;
+  background-image: url(${(props) => props.url});
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 80px;
+  /* margin-bottom: 20px; */
+  margin-top: -10px;
   /* position: absolute;
   top: 70px;
   left: 300px; */
 `;
-const Text = styled.h4`
-  /* position: absolute;
-  top: 130px;
-  right: 60px; */
-  width: 400px;
-  font-size: 15px;
+const Text = styled.div`
+  margin-right: 10px;
+
+  h2 {
+    font-size: 40px;
+  }
 `;
 
-const Card = ({ text }) => {
-  //   const Avatar = require(`../../assets/${image}.jpg`).default;
+const Card = ({ text, img }) => {
   return (
     <CARD>
-      <Image />
+      <Image url={img} />
       <Text>
-        <p>{text}</p>
+        <h1>{text}</h1>
+        <h2>Cafe</h2>
       </Text>
     </CARD>
   );

@@ -11,7 +11,7 @@ const Milan_site = () => {
         </h1>
       </Row1>
       <Row2>
-        <img src={require('../images/milan_site1.png')} alt='' />
+        <img src='https://i.imgur.com/5aneMKb.jpg' alt='Southampton' />
         <Content>
           <p>
             Project Milan is a collaboration between Enactus DTU and Enactus
@@ -74,6 +74,9 @@ export const Content = styled.div`
   background: #e2b43b;
   color: #fff;
   width: 60%;
-  padding: 200px 70px;
+  padding: 250px 70px;
   border-radius: 100px 0 0 100px;
+  p {
+    font-size: 20px;
+  }
 `;

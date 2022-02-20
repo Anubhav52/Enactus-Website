@@ -9,14 +9,7 @@ const Unnati_content = () => {
       </Image>
       <Circle />
       <Text>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam
-          quis aliquam delectus inventore mollitia voluptate adipisci eum
-          voluptatem ratione architecto ipsum rerum, voluptatum ipsa incidunt ab
-          accusamus vel, obcaecati illum vero placeat alias tempore! Sunt
-          asperiores quis accusamus officia necessitatibus, dolor voluptatum
-          iure iusto vel voluptates cupiditate sit neque.
-        </p>
+        <p>badarpur</p>
       </Text>
     </Content_container>
   );

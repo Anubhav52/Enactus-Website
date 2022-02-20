@@ -39,3 +39,63 @@ export const impact_unnati = [
     img: 'https://i.imgur.com/bCWrbze.png',
   },
 ];
+
+export const slider_unnati = [
+  {
+    id: 1,
+    src: 'https://i.imgur.com/TXdAYNE.jpg',
+  },
+  {
+    id: 2,
+    src: 'https://i.imgur.com/Aj7yHL2.jpg',
+  },
+
+  {
+    id: 3,
+    src: 'https://i.imgur.com/yHDnsgK.jpg',
+  },
+  {
+    id: 4,
+    src: 'https://i.imgur.com/ELRYORH.jpg',
+  },
+  {
+    id: 5,
+    src: 'https://i.imgur.com/cjlI098.jpg',
+  },
+];
+
+export const business_unnati = [
+  {
+    id: '1.',
+    name: 'Market analysis',
+    description: 'Detailed Consumer and Market analysis at the urban slums',
+    img: 'https://i.imgur.com/ksBxdoQ.png',
+  },
+  {
+    id: '2.',
+    name: 'Unnati cafes',
+    description:
+      'Establishment of Unnati Cafes and finding suitable Unnati Cafes and finding suitable Unnati Entrepreneurs',
+    img: 'https://i.imgur.com/FoNdVQ9.png',
+  },
+  {
+    id: '3.',
+    name: 'PR - campaigns',
+    description: 'PR Campaigns to promote the Unnati Cafes ',
+    img: 'https://i.imgur.com/cGThfEg.png',
+  },
+
+  {
+    id: '4.',
+    name: 'Unnati software',
+    description: 'Providing digital learning through the Unnati Software',
+    img: 'https://i.imgur.com/5ENS2MF.png',
+  },
+  {
+    id: '5.',
+    name: 'Testing and Certification',
+    description:
+      'Testing and Certification of Students, aling with conduction of continuous feedback and survey sessions.',
+    img: 'https://i.imgur.com/CGSM32V.png',
+  },
+];

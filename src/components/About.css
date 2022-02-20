@@ -1,59 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
-
-
-.council-heading {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  color: #3a3938;
-  font-size: 124px;
-  letter-spacing: 8px;
-  cursor: pointer;
+.about-container {
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(252, 247, 233);
 }
 
-.council-heading::before {
-  content: "COUNCIL' 21";
+.about-content {
   position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent 0,
-    transparent 2px,
-    white 2px,
-    white 4px
-  );
-  -webkit-background-clip: text;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  transition: 1s;
+  bottom: 0;
+  height: 86vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
 }
 
-.council-heading::after {
-  content: "COUNCIL' 21";
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(
-    135deg,
-    transparent 0,
-    transparent 2px,
-    white 2px,
-    white 4px
-  );
-  -webkit-background-clip: text;
-  top: 0px;
-  left: 0px;
-  transition: 1s;
+.col1 {
+  height: 100%;
+  width: 35%;
 }
 
-.council-heading:hover:before {
-  top: 10px;
-  left: 10px;
+.col1 h1 {
+  font-size: 90px;
+  font-weight: 600;
+  padding: 50px 50px;
 }
 
-.council-heading:hover:after {
-  top: -10px;
-  left: -10px;
-} 
-
+.col2 {
+  height: 100%;
+  width: 65%;
+  padding-top: 50px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 20px;
+}

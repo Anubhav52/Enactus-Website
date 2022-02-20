@@ -11,7 +11,11 @@ const Swajal_hero = () => {
 
   return (
     <Swajal_container>
-      <Navbar img={require('../images/blackenactusLogo.png')} />
+      <Navbar
+        img={require('../images/blackenactusLogo.png')}
+        color='#0099ff'
+        logo={'https://i.imgur.com/oLCymq6.png'}
+      />
       <Row1>
         <Swajal_content>
           <h1>
@@ -31,13 +35,13 @@ const Swajal_hero = () => {
             <img src={svg_3} alt='' />
           </Image3>
           <Image4>
-            <img src={require('../images/Rectangle 64.png')} alt='' />
+            <img src='https://i.imgur.com/uabOR0q.png' alt='' />
           </Image4>
           <Image5>
-            <img src={require('../images/Rectangle 64.png')} alt='' />
+            <img src='https://i.imgur.com/F3vFh8O.png' alt='' />
           </Image5>
           <Image6>
-            <img src={require('../images/Rectangle 64.png')} alt='' />
+            <img src='https://i.imgur.com/YLxudEr.png' alt='' />
           </Image6>
         </Swajal_images>
       </Row1>
@@ -84,7 +88,8 @@ export const Swajal_content = styled.div`
   }
   p {
     font-size: 20px;
-    width: 40vw;
+    width: 45vw;
+    line-height: 1.5;
     margin-top: 50px;
   }
 `;
@@ -92,6 +97,7 @@ export const Swajal_content = styled.div`
 export const Swajal_images = styled.div`
   height: 80vh;
   position: relative;
+  z-index: 0;
 `;
 
 export const Image1 = styled.div`
@@ -129,8 +135,8 @@ export const Image4 = styled.div`
   img {
     position: absolute;
     bottom: -30px;
-    left: 200px;
-    width: 150px;
+    left: 180px;
+    width: 270px;
     object-fit: contain;
     z-index: 10;
   }
@@ -151,9 +157,9 @@ export const Image6 = styled.div`
   position: relative;
   img {
     position: absolute;
-    top: 150px;
-    left: 10px;
-    width: 150px;
+    top: 160px;
+    left: -20px;
+    width: 200px;
     object-fit: contain;
     z-index: 10;
   }

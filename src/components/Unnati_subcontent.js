@@ -10,23 +10,27 @@ const Unnati_subcontent = () => {
       <Unnati_sub_skew>
         <Row>
           <Div_Unn>
+            <img src='https://i.imgur.com/DxEmoXp.png' alt='' />
             <p>
               Instant doubt clearance via chat box functionalities by linking
               the Unnati community
             </p>
           </Div_Unn>
           <Div_Unn>
+            <img src='https://i.imgur.com/snCIcP9.png' alt='' />
             <p>
               Guidance and discussions forums to connect past and present Unnati
               students
             </p>
           </Div_Unn>
           <Div_Unn>
+            <img src='https://i.imgur.com/agfDtdB.png' alt='' />
             <p>
               Certification of completion provided after the course is completed
             </p>
           </Div_Unn>
           <Div_Unn>
+            <img src='https://i.imgur.com/oIwGpPX.png' alt='' />
             <p>
               Interactive content combined with automated assessment, evaluation
               and fee collection
@@ -45,7 +49,7 @@ export const main_box = styled.div`
 `;
 
 export const Unnati_sub_skew = styled.div`
-  height: 650px;
+  height: 600px;
   background: url(${skew_Img});
   background-repeat: no-repeat;
   background-size: 100%;
@@ -68,15 +72,22 @@ export const Row = styled.div`
   position: absolute;
   top: 120px;
   padding: 0px 60px;
-  height: 100%;
+  height: 500px;
 `;
 
 const Div_Unn = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-bottom: 30px;
+  }
   :not(:last-child) {
     padding-right: 20px;
     margin-right: 20px;
     border-right: 1px dashed black;
   }
 
-  height: 150px;
+  height: 275px;
 `;

@@ -1,9 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import big_logo from '../images/big_logopng.png';
 import { gsap } from 'gsap';
+import Dropdown from './Dropdown';
+import Navbar from './Navbar';
 
 const Home = () => {
+  // const [dropdown, setDropdown] = useState(false);
+  // const onMouseEnter = () => {
+  //   setDropdown(true);
+  // };
+
+  // const onMouseLeave = () => {
+  //   setDropdown(false);
+  // };
+
   useEffect(() => {
     gsap.to('.text', {
       y: '0%',
@@ -23,6 +34,16 @@ const Home = () => {
         y: '-100%',
         duration: 1,
         ease: 'power1.out',
+      },
+      '-=1'
+    );
+    gsap.to(
+      '.nav-container, .hero ',
+      {
+        x: '0%',
+        duration: 1,
+        ease: 'power1.out',
+        delay: 0.5,
       },
       '-=1'
     );
@@ -60,7 +81,7 @@ const Home = () => {
                 <a href='/'>Council</a>
               </li>
               <li>
-                <a href='/'>Achievments</a>
+                <a href='/'>Achievement</a>
               </li>
             </ul>
           </nav>
@@ -68,7 +89,7 @@ const Home = () => {
 
         <div className='social-header big_text'>
           <img src={require('../images/enactusIndia.png')} alt='' />
-          <a href='/'>
+          <a href='/' className='enactusIn'>
             <h5>Enactus India</h5>
           </a>
         </div>

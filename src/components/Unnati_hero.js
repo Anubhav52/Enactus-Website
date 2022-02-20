@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 import bg_Img from '../images/unnati_web.svg';
 import Status from './Status';
 import { unnati_data, impact_unnati } from '../data_unnati';
@@ -10,7 +10,12 @@ const Unnati_hero = () => {
   return (
     <Unnati_main>
       <Unnati_container>
-        <Navbar img={require('../images/blackenactusLogo.png')} light='light' />
+        <Navbar
+          img={require('../images/blackenactusLogo.png')}
+          light='light'
+          color='#000'
+          logo={'https://i.imgur.com/N9vdBmY.png'}
+        />
         <Showcase />
         <Unnati_div>
           <Unnati_content>
@@ -59,6 +64,7 @@ export default Unnati_hero;
 export const Unnati_main = styled.div`
   height: 100%;
   position: relative;
+  z-index: 0 !important;
 `;
 
 export const Unnati_container = styled.div`
@@ -92,7 +98,7 @@ export const Unnati_content = styled.div`
   h1 {
     padding-top: 180px;
     position: relative;
-    z-index: 10;
+    z-index: 0;
     margin-left: 90px;
     font-size: 120px;
     font-weight: 600;
@@ -116,7 +122,7 @@ export const Unnati_demo = styled.div`
   position: absolute;
   top: 80px;
   right: 0;
-  z-index: 10;
+  z-index: 0;
   img {
     width: 600px;
     object-fit: contain;

@@ -22,6 +22,10 @@ const Carousal = styled.div`
   justify-content: center;
   position: relative;
 
+  h1 {
+    font-size: 65px;
+  }
+
   &::before {
     content: ' ';
     position: absolute;
@@ -74,38 +78,11 @@ const ImageSlider = () => {
     <Section>
       <Carousal>
         <Slider {...settings}>
-          <Card
-            text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam
-          quis aliquam delectus inventore mollitia voluptate adipisci eum
-          voluptatem ratione architecto ipsum rerum, voluptatum ipsa incidunt ab
-          accusamus vel, obcaecati illum vero placeat alias tempore! Sunt
-          asperiores quis accusamus officia necessitatibus, dolor voluptatum
-          iure iusto vel voluptates cupiditate sit neque.'
-          />
-          <Card
-            text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam
-          quis aliquam delectus inventore mollitia voluptate adipisci eum
-          voluptatem ratione architecto ipsum rerum, voluptatum ipsa incidunt ab
-          accusamus vel, obcaecati illum vero placeat alias tempore! Sunt
-          asperiores quis accusamus officia necessitatibus, dolor voluptatum
-          iure iusto vel voluptates cupiditate sit neque.'
-          />
-          <Card
-            text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam
-          quis aliquam delectus inventore mollitia voluptate adipisci eum
-          voluptatem ratione architecto ipsum rerum, voluptatum ipsa incidunt ab
-          accusamus vel, obcaecati illum vero placeat alias tempore! Sunt
-          asperiores quis accusamus officia necessitatibus, dolor voluptatum
-          iure iusto vel voluptates cupiditate sit neque.'
-          />
-          <Card
-            text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam
-          quis aliquam delectus inventore mollitia voluptate adipisci eum
-          voluptatem ratione architecto ipsum rerum, voluptatum ipsa incidunt ab
-          accusamus vel, obcaecati illum vero placeat alias tempore! Sunt
-          asperiores quis accusamus officia necessitatibus, dolor voluptatum
-          iure iusto vel voluptates cupiditate sit neque.'
-          />
+          <Card text='Badarpur' img='https://i.imgur.com/O5uhwxg.png' />
+          <Card text='Noida' img='https://i.imgur.com/7UCgVpq.png' />
+          <Card text='Malviya Nagar' img='https://i.imgur.com/bpaRz4k.png' />
+          <Card text='Laxmi Nagar' img='https://i.imgur.com/3eomSj5.png' />
+          <Card text='Vasant Kunj' img='https://i.imgur.com/CabpIgp.png' />
         </Slider>
       </Carousal>
     </Section>
