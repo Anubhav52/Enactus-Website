@@ -42,7 +42,7 @@ const C_Card = styled.div`
   overflow: hidden;
   border-radius: 5px;
   padding: 7rem 0 0;
-  height: 440px;
+  height: 300px;
   width: 95%;
   cursor: pointer;
 `;

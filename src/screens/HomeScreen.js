@@ -11,7 +11,7 @@ const HomeScreen = () => {
   return (
     <div>
       <Home />
-      <HomeImpact />
+      {/* <HomeImpact /> */}
       <Bussiness_model contents={business_landing} bgColor='#000' />
       <Timeline_slides />
       <Footer />

@@ -31,6 +31,6 @@
   overflow-x: hidden;
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-row-gap: 20px;
 }
