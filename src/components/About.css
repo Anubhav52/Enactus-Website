@@ -1,0 +1,59 @@
+.about-container {
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(252, 247, 233);
+  scroll-behavior: smooth;
+}
+
+.about-content {
+  position: absolute;
+  bottom: 0;
+  height: 86vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+}
+
+.col1 {
+  height: 100%;
+  width: 35%;
+}
+
+.col1 h1 {
+  font-size: 90px;
+  font-weight: 600;
+  padding: 50px 50px;
+}
+
+.col1 h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.col2 {
+  height: 100%;
+  width: 65%;
+  /* overflow-x: hidden; */
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.council {
+  height: 2000px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 20px;
+}
+
+#advisory {
+  padding-top: 80px;
+}
+
+/* .advisory {
+  height: 2000px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 20px;
+} */
